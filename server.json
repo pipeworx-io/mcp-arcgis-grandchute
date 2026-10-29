@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/arcgis-grandchute",
   "title": "Arcgis Grandchute",
   "description": "Town of Grand Chute GIS — Grand Chute, Wisconsin open geospatial data (ArcGIS).",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "websiteUrl": "https://pipeworx.io/packs/arcgis-grandchute",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-arcgis-grandchute",

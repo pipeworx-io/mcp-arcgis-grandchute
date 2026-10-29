@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-arcgis-grandchute",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Town of Grand Chute GIS — Grand Chute, Wisconsin open geospatial data (ArcGIS).",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-arcgis-grandchute": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "arcgis-grandchute"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-arcgis-grandchute.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/arcgis-grandchute",
   "pipeworx": {
-    "sourceHash": "v1-eee15c86aa8ee0f9aa7bd1311f9d3202ead9148b9869f4b580c5f0dd1e554a4e",
-    "sourceCommit": "71f5325b13bb0ea0de2f0f7207885962ec91a484"
+    "mode": "gateway",
+    "slug": "arcgis-grandchute",
+    "gatewaySlug": "arcgis-grandchute",
+    "sourceHash": "v1-2536da1f8345b51853ac7036cfa18265040687bf3e3d98dc548d9556db4c5290",
+    "sourceCommit": "c6136b81713e72ccb22977ca0c0cd981f8c3f081"
   }
 }
